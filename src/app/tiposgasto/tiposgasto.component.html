@@ -1,0 +1,14 @@
+<br/>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit($event)">
+  <div class="field">
+    <label class="label">Nombre</label>
+    <div class="control">
+      <input class="input is-primary" type="text" placeholder="Tipo Gasto" #tipogasto="ngModel" [(ngModel)]="tipogastotext" [ngModelOptions]="{standalone: true}">
+    </div>
+  </div>
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link" (click)="guardarTipoGasto($event)">Guardar</button>
+    </div>
+  </div>
+</form>
